@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pizza_shop/static/css/main.5a2c334c.chunk.css",
+    "main.js": "/pizza_shop/static/js/main.d3cbdb3e.chunk.js",
+    "main.js.map": "/pizza_shop/static/js/main.d3cbdb3e.chunk.js.map",
+    "runtime-main.js": "/pizza_shop/static/js/runtime-main.b1decc92.js",
+    "runtime-main.js.map": "/pizza_shop/static/js/runtime-main.b1decc92.js.map",
+    "static/js/2.491db799.chunk.js": "/pizza_shop/static/js/2.491db799.chunk.js",
+    "static/js/2.491db799.chunk.js.map": "/pizza_shop/static/js/2.491db799.chunk.js.map",
+    "static/js/3.f2aa1e0d.chunk.js": "/pizza_shop/static/js/3.f2aa1e0d.chunk.js",
+    "static/js/3.f2aa1e0d.chunk.js.map": "/pizza_shop/static/js/3.f2aa1e0d.chunk.js.map",
+    "index.html": "/pizza_shop/index.html",
+    "static/css/main.5a2c334c.chunk.css.map": "/pizza_shop/static/css/main.5a2c334c.chunk.css.map",
+    "static/js/2.491db799.chunk.js.LICENSE.txt": "/pizza_shop/static/js/2.491db799.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/pizza_shop/static/media/ProximaNova-Regular.d97f8f32.eot",
+    "static/media/empty-cart.db905d1f.png": "/pizza_shop/static/media/empty-cart.db905d1f.png",
+    "static/media/pizza-logo.56ac8703.svg": "/pizza_shop/static/media/pizza-logo.56ac8703.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1decc92.js",
+    "static/js/2.491db799.chunk.js",
+    "static/css/main.5a2c334c.chunk.css",
+    "static/js/main.d3cbdb3e.chunk.js"
+  ]
+}
