@@ -1,6 +1,10 @@
-Stack:
+# Stack:
+<ul>
+ <li>ReactJS + хуки</li>
+ <li>Второй пункт</li>
+ <li>Третий пункт</li>
+</ul>
 
-ReactJS + хуки
 
 React Router
 
