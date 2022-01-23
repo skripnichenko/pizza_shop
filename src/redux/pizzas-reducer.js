@@ -24,7 +24,7 @@ export const setIsLoadedActionCreator = (bool) => ({ type: SET_IS_LOADED, bool }
 
 export const fetchPizzas = (sortBy, category) => (dispatch) => {
     dispatch(setIsLoadedActionCreator(false));
-    axios.get(`/pizzas?${
+    axios.get(`https://my-json-server.typicode.com/skripnichenko/pizza_shop_json/pizzas?${
             category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&order=${sortBy.order}`).then(({ data }) => {
         dispatch(setPizzasActionCreator(data));
         dispatch(setIsLoadedActionCreator(true));

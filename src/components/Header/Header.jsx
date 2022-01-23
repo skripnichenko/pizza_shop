@@ -15,14 +15,14 @@ const Header = (props) => {
             <img width="38" src={pizzaLogo} alt="Pizza logo" />
             <div>
               <h1>React Pizza</h1>
-              <p>самая вкусная пицца во вселенной</p>
+              <p>the tastiest pizza in the universe</p>
             </div>
           </div>
           </Link>
           <div className="header__cart">
           <Link to='/cart' >
             <Button  className={'button--cart'}>
-            <span>{totalPrice} ₽</span>
+            <span>{totalPrice}&#36;</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"

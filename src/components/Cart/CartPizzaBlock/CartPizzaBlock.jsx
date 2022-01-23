@@ -21,7 +21,7 @@ const CartPizzaBlock = ({ id, name, type, size, totalPrice, amount, decreasePizz
             </div>
             <div className="cart__item-info">
                 <h3>{name}</h3>
-                <p>{type} тесто, {size} см.</p>
+                <p>{type} dough, {size}cm.</p>
             </div>
             <div className="cart__item-count">
                 <div onClick={decreaseItem} className="button button--outline button--circle cart__item-count-minus">
@@ -41,7 +41,7 @@ const CartPizzaBlock = ({ id, name, type, size, totalPrice, amount, decreasePizz
                 </div>
             </div>
             <div className="cart__item-price">
-                <b>{totalPrice} ₽</b>
+                <b>{totalPrice}&#36;</b>
             </div>
             <div className="cart__item-remove">
                 <div onClick={removeItem} className="button button--outline button--circle">

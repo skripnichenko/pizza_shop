@@ -5,7 +5,7 @@ const Categories = React.memo(({ activeCategory, categories, setCategory }) => {
     return (
         <div className="categories">
             <ul>
-                <li className={activeCategory === null ? 'active' : ''} onClick={() => setCategory(null)}>Все</li>
+                <li className={activeCategory === null ? 'active' : ''} onClick={() => setCategory(null)}>All</li>
                 {categories.map((el, i) => {
                     return <li className={activeCategory === i ? 'active' : ''} onClick={() => setCategory(i)} key={`${el}_${i}`}>{el}</li>
                 })}

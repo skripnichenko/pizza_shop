@@ -6,15 +6,16 @@ const OrderIsAccepted = () => {
     return (
         <div className="cart cart--empty">
             <h2>
-                Ваш заказ принят <i>😁</i>
+                Your order has been accepted <i>😁</i>
             </h2>
             <p>
-                Ожидайте звонка курьера
-      <br />
-      Хорошего дня
-    </p> 
+                Wait for the courier to call.
+                <br />
+                Have a nice day!
+            </p>
+            <br />
             <Link to="/" className="button button--black">
-                <span>Вернуться назад</span>
+                <span>Go back</span>
             </Link>
         </div>
     )

@@ -41,7 +41,7 @@ const Sort = React.memo(function Sort({ items, activeSortType, onSelectSortType 
                         fill="#2C2C2C"
                     />
                 </svg>
-                <b>Сортировка по:</b>
+                <b>Sort by:</b>
                 <span onClick={() => toggleVisibleItem()}>{activeLabel}</span>
             </div>
             {visibleItem &&

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import PizzaBackground from './PizzaBackground';
 
 const PizzaBlock = ({ id, name, imageUrl, price, types, sizes, isLoaded, onAddPizzaToCart, countAdded }) => {
-  const type = ['тонкое', 'традиционное'];
+  const type = ['thin', 'standard'];
   const size = [26, 30, 40];
 
   const [activeType, setActiveType] = useState(0);
@@ -48,12 +48,12 @@ const PizzaBlock = ({ id, name, imageUrl, price, types, sizes, isLoaded, onAddPi
             return <li key={el} onClick={() => onSelectSize(i)} className={classNames({
               active: activeSize === i,
               disabled: !sizes.includes(el)
-            })}>{el}cм.</li>
+            })}>{el}cm.</li>
           })}
         </ul>
       </div>
       <div className="pizza-block__bottom">
-        <div className="pizza-block__price">от {price} ₽</div>
+        <div className="pizza-block__price">from {price}&#36;</div>
 
         <Button onClick={onAddPizza} className={'button--add'} outline><svg
           width="12"
@@ -67,7 +67,7 @@ const PizzaBlock = ({ id, name, imageUrl, price, types, sizes, isLoaded, onAddPi
             fill="white"
           />
         </svg>
-          <span>Добавить</span>
+          <span>Add</span>
           {countAdded && <i>{countAdded}</i>}
         </Button>
 

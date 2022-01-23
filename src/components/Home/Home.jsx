@@ -8,10 +8,10 @@ import { fetchPizzas } from './../../redux/pizzas-reducer';
 import PizzaBackground from './PizzaBlock/PizzaBackground';
 import { addPizzasToCartActionCreator } from '../../redux/cart-reducer';
 
-const categories = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
-const sortItems = [{ name: 'популярности', type: 'popular', order: 'desc' },
-{ name: 'цене', type: 'price', order: 'desc' },
-{ name: 'алфавиту', type: 'name', order: 'asc' }];
+const categories = ['With Meat', 'Vegetarian', 'Grilled', 'Spicy', 'Closed'];
+const sortItems = [{ name: 'popularity', type: 'popular', order: 'desc' },
+{ name: 'price', type: 'price', order: 'desc' },
+{ name: 'alphabet', type: 'name', order: 'asc' }];
 
 const Home = () => {
   const pizzas = useSelector(({ pizzas }) => pizzas.items);
@@ -43,9 +43,8 @@ const Home = () => {
         <Sort onSelectSortType={onSelectSortType} activeSortType={sortBy.type} items={sortItems} />
       </div>
 
-      <h2 className="content__title">Все пиццы</h2>
+      <h2 className="content__title">All pizzas</h2>
       <div className="content__items">
-
         {isLoaded ?
           pizzas.map((data) => {
             return <PizzaBlock onAddPizzaToCart={addPizzas} key={`${data.id}`} {...data} isLoaded={isLoaded} countAdded={cartItems[data.id] && cartItems[data.id].items.length} />
